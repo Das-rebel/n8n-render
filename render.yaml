@@ -2,6 +2,9 @@ services:
   - type: web
     name: n8n
     env: docker
+    ports:
+      - port: 5678
+        protocol: tcp
     region: oregon # optional (defaults to oregon)
     plan: standard # optional (defaults to starter)
     branch: main # optional (defaults to master)
